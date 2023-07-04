@@ -14,6 +14,25 @@ Zainstaluj te zależności za pomocą Yarn:
 yarn install
 ```
 
+## Uruchamianie testów
+
+1. Przed uruchomieniem testów, upewnij się, że masz zainstalowane wszystkie zależności. Jeżeli jeszcze tego nie zrobiłeś, możesz je zainstalować za pomocą komendy:
+
+   ```
+   yarn install
+   ```
+
+2. Następnie, możesz uruchomić testy za pomocą polecenia:
+
+   ```
+   npx hardhat test
+   ```
+
+   Polecenie to uruchomi wszystkie testy jednostkowe, które zostały zdefiniowane w katalogu `test/` projektu. Testy są wykonane za pomocą frameworka Mocha, a asercje są dokonywane za pomocą biblioteki Chai.
+
+   Po uruchomieniu testów, zobaczysz wyniki testów w konsoli. Dla każdego testu będzie wyświetlany status sukcesu lub błędu. W przypadku błędu, zostanie wyświetlony stos błędów, co pomoże Ci zidentyfikować problem.
+
+
 ## Funkcje kontraktu
 
 ### `createOrder(string memory _product, uint256 _price) public`
